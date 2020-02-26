@@ -19,9 +19,9 @@ const SearchScreen = () => {
             onTermChange={setTerm} 
             onTermSubmit={()=>searchApi(term)} />
             <ScrollView>
-            <ResultsList title='Cost Effective' results={filterResultsByPrice('$')}/>
-            <ResultsList title='Bit Pricier' results={filterResultsByPrice('$$')}/>
-            <ResultsList title='Big Spendor' results={filterResultsByPrice('$$$')}/>
+            <ResultsList title='Cost Effective'  results={filterResultsByPrice('$')}/>
+            <ResultsList title='Bit Pricier'  results={filterResultsByPrice('$$')}/>
+            <ResultsList title='Big Spendor'  results={filterResultsByPrice('$$$')}/>
             </ScrollView>
         </>
     )
